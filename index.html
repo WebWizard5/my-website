@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <div class="logo">MyPortfolio</div>
+    <div class="menu-toggle" id="menu-toggle">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav>
+      <ul id="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HOME SECTION -->
+  <section class="home" id="home">
+    <h1>Hello, I'm Saif</h1>
+    <p>Welcome to my portfolio website. I design and develop modern, fast, and responsive websites using HTML, CSS & JavaScript.</p>
+    <button onclick="document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })">
+      See My Work
+    </button>
+  </section>
+
+ <!-- ABOUT SECTION -->
+<section class="about" id="about">
+    <div class="about-container">
+      <h2>About Me</h2>
+  
+      <!-- ✅ Profile Picture -->
+      <div class="profile-pic-wrapper">
+        <img src="ashu-pic.jpg" alt="Ashu Profile Picture" class="profile-pic">
+      </div>
+  
+      <div class="about-content">
+        <div class="about-text">
+          <p>Hi! I'm <strong>Saif Ali</strong>, a passionate front-end web developer who loves turning ideas into beautiful and responsive websites. With a strong foundation in HTML, CSS, and JavaScript, I build clean and functional user interfaces.</p>
+          <p>I started coding as a hobby, and it quickly turned into a creative obsession. Now, I work on a variety of freelance projects, always learning and pushing my skills further.</p>
+          <p>When I’m not coding, I enjoy reading tech blogs, sketching UI layouts, and playing PC games. Let’s build something amazing together!</p>
+        </div>
+        <div class="about-image">
+          <img src="https://via.placeholder.com/300x300.png?text=Your+Photo" alt="About Me Photo">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- PROJECTS SECTION -->
+<section class="projects" id="projects">
+    <div class="projects-container">
+      <h2>My Projects</h2>
+      <div class="project-cards">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/350x200.png?text=Portfolio+Website" alt="Project 1">
+          <h3>Personal Portfolio</h3>
+          <p>A responsive and modern portfolio site built using HTML, CSS, and JavaScript. Showcases all my work and skills.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+  
+        <div class="project-card">
+          <img src="https://via.placeholder.com/350x200.png?text=Weather+App" alt="Project 2">
+          <h3>Weather App</h3>
+          <p>A live weather app using OpenWeather API. Built with JavaScript, fetch API, and responsive design techniques.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+  
+        <div class="project-card">
+          <img src="https://via.placeholder.com/350x200.png?text=Todo+App" alt="Project 3">
+          <h3>Todo List App</h3>
+          <p>A simple and clean task manager app that uses local storage to save tasks. Made using vanilla JS.</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+    <div class="contact-container">
+      <h2>Contact Me</h2>
+      <p>If you have any questions, project ideas, or just want to say hello — feel free to send a message below!</p>
+      
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your name" />
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required placeholder="Enter your email" />
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Write your message..."></textarea>
+        </div>
+        
+        <button type="submit" class="btn">Send Message</button>
+        <p id="form-status" class="form-status"></p>
+      </form>
+    </div>
+    <div class="contact-info">
+        <h3>Other Ways to Reach Me</h3>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:saif@example.com">saif@example.com</a></li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/923001234567" target="_blank">+92 300 1234567</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/saif-ali" target="_blank">linkedin.com/in/saif-ali</a></li>
+        </ul>
+      </div>
+      
+  </section>
+  
+
+
+  <script src="script.js"></script>
+  <!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" title="Go to top">↑</button>
+
+</body>
+</html>
